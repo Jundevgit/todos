@@ -1,0 +1,139 @@
+* {
+    box-sizing: inherit;
+}
+html, body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font: 'Helvetica Neue', helvetica, Arial, sans-serif;
+}
+.container {
+    top: 0;
+    height: 100vh;
+    background:#f0eeee;
+    justify-content: center;
+
+}
+/* Header */
+.todos {
+    display: flex;
+    position: absolute;
+    /* position: relative; */
+    left: 50%;
+    margin: 0;
+    top: 120px;
+    font-size: 100px;
+    font-weight: 100;
+    color: #ecd9d9;
+}
+.header__main {
+    display: flex;
+    /* height: 100vh; */
+    left: 590px;
+    top: 300px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 3px #ccc;
+}
+.header__main-input {
+    width: 520px;
+    height: 60px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 100;
+    padding: 15px 15px 15px 50px;
+}
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: #e6e6e6;
+}
+
+/* Aside bar */
+.left__bar {
+    left: 10px;
+    position: absolute;
+    width: 270px;
+    height: 100%;
+    top: 15px;
+    background-color: rgb(246, 248, 248);
+    padding: 10px;
+    border-radius: 5px;
+}
+.left__bar h3 {
+    font-size: 1.8rem;
+    margin: 5px 5px;
+    top: 10px;
+}
+.left__bar-quote-text {
+    position: relative;
+    color: grey;
+    font-size: 0.91rem;
+    font-weight: 100;
+    font-style: italic;
+    background-color: rgb(226, 228, 228);
+    border-radius: 5px;
+}
+.left__bar-quote-text::before {
+    content: '"';
+    font-size: 50px;
+    color: rgb(146, 145, 143);
+    /* opacity: .1; */
+    position: absolute;
+    top: -15px;
+    left: -5px;
+}
+.left__bar-quote-text::after {
+    content: '"';
+    font-size: 50px;
+    color: rgb(146, 145, 143);
+    /* opacity: .1; */
+    position: absolute;
+    bottom: -35px;
+    right: 0;
+}
+.left__bar-quote-link {
+    position: absolute;
+    right: 20px;
+}
+.left__bar-quote-footer {
+    position: relative;
+    padding-bottom: 20px;
+}
+.left__bar-quote-footer::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    border-color: #e1e4e4 transparent transparent transparent;
+    border-style: solid;
+    border-width: 20px 25px;
+    cursor: pointer;
+}
+h5 {
+    margin: 10px 0 0;
+    font-weight: 400;
+}
+.left__bar a {
+    text-decoration: none;
+    color: firebrick;
+    font-size: 0.9rem;
+}
+.left__bar a:hover {
+    color: lightslategrey;
+    text-decoration: lightslategrey;
+    cursor: pointer;
+}
+.left__bar-recom h4 {
+    font-weight: 450;
+}
+.left__bar-recom-list {
+    /* list-style: none; */
+    padding-left: 5px;
+}
+.left__bar-list-item {
+    color: firebrick;
+    font-size: 0.9rem;
+}
